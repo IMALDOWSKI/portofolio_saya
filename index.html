@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hikmal Abrar - Data Analyst Portfolio</title>
+<meta name="description" content="Portfolio Hikmal Abrar - Data Analyst yang mengubah data menjadi wawasan jelas dan dapat ditindaklanjuti.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+<link rel="stylesheet" href="style.css">
+<meta property="og:title" content="Hikmal Abrar — Data Analyst Portfolio">
+<meta property="og:description" content="Portfolio Hikmal Abrar — Data Analyst yang mengubah data menjadi wawasan jelas dan dapat ditindaklanjuti.">
+<meta property="og:image" content="https://i.imgur.com/Y8p2KAC.jpeg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+<div class="loading-screen" id="loadingScreen"><div class="loader"></div></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme" id="themeBtn">🌙</button>
+
+<!-- ===== HEADER NAVIGATION ===== -->
+<header class="header-nav">
+  <div class="container">
+    <nav class="nav-menu">
+      <div class="nav-brand">
+        <a href="index.html" class="brand-link">Hikmal Abrar</a>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-item-dropdown">
+          <a href="index.html" class="nav-item active" data-nav="home">Beranda</a>
+          <div class="dropdown-submenu">
+            <a href="index.html#about" class="dropdown-item">👤 Tentang Saya</a>
+            <a href="index.html#skills" class="dropdown-item">⚡ Skills</a>
+            <a href="index.html#projects" class="dropdown-item">🗂️ Proyek</a>
+            <a href="index.html#contact" class="dropdown-item">📬 Kontak</a>
+          </div>
+        </li>
+        <li class="nav-item-dropdown">
+          <a href="#" class="nav-item " data-nav="edu">Latar Belakang</a>
+          <div class="dropdown-submenu">
+            <a href="pendidikan.html" class="dropdown-item">🏫 Pendidikan Formal</a>
+            <a href="sertifikasi_pelatihan.html" class="dropdown-item">📜 Sertifikasi &amp; Pelatihan</a>
+          </div>
+        </li>
+        <li class="nav-item-dropdown">
+          <a href="#" class="nav-item " data-nav="exp">Perjalanan Saya</a>
+          <div class="dropdown-submenu">
+            <a href="pengalaman_kerja.html" class="dropdown-item">🏢 Pengalaman Kerja</a>
+            <a href="volunteer.html" class="dropdown-item">❤️ Volunteer</a>
+          </div>
+        </li>
+        <li class="nav-item-dropdown">
+          <a href="#" class="nav-item " data-nav="org">Kontribusi</a>
+          <div class="dropdown-submenu">
+            <a href="organisasi.html" class="dropdown-item">🏛️ Organisasi</a>
+            <a href="organisasi.html#community" class="dropdown-item">🌱 Komunitas</a>
+          </div>
+        </li>
+      </ul>
+      <div class="nav-controls">
+        <a href="https://wa.me/6282179736557?text=Hi%20Hikmal,%20I%20would%20like%20to%20hire%20you%20for%20a%20project"
+           class="btn btn-hire" target="_blank" title="Hire Me via WhatsApp">
+          <span>💼</span> Hire Me
+        </a>
+        <div class="hamburger-menu">
+          <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          <div class="dropdown-menu" id="dropdownMenu">
+            <div class="dropdown-section">
+              <h4 class="dropdown-title">Bahasa / Language</h4>
+              <div class="lang-options">
+                <button class="lang-option" data-lang="id">🇮🇩 Indonesia</button>
+                <button class="lang-option" data-lang="en">🇬🇧 English</button>
+                <button class="lang-option" data-lang="ja">🇯🇵 日本語</button>
+              </div>
+            </div>
+            <div class="dropdown-section">
+              <h4 class="dropdown-title">Halaman</h4>
+              <a href="index.html" class="dropdown-item"> Beranda</a>
+              <a href="pendidikan.html" class="dropdown-item">🎓 Pendidikan</a>
+              <a href="pengalaman_kerja.html" class="dropdown-item">💼 Pengalaman Kerja</a>
+              <a href="volunteer.html" class="dropdown-item">❤️ Volunteer</a>
+              <a href="organisasi.html" class="dropdown-item">🏛️ Organisasi</a>
+              <a href="sertifikasi_pelatihan.html" class="dropdown-item">📜 Sertifikasi</a>
+            </div>
+            <div class="dropdown-section">
+              <h4 class="dropdown-title">Aksi Cepat</h4>
+              <a href="https://drive.google.com/file/d/1S7kXNs9U4jVXm8Y3dfDk3zoFatZHrOvW/view?usp=sharing" class="dropdown-item" target="_blank">📄 Download CV</a>
+              <a href="index.html#contact" class="dropdown-item">💬 Hubungi Saya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content fade-in-up">
+      <div class="hero-text">
+        <h1>Hikmal Abrar</h1>
+        <div class="role">Data Analyst</div>
+        <div class="tagline">"Mengubah data menjadi wawasan yang jelas dan dapat ditindaklanjuti"</div>
+
+      </div>
+      <div class="hero-photo-container">
+        <div class="profile-photo">
+          <img src="https://i.imgur.com/Y8p2KAC.jpeg" alt="Hikmal Abrar - Data Analyst" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="section-title">Tentang Saya</h2>
+    <div class="about-content fade-in-up">
+      <p class="about-text">Saya lulusan Informatika Komputer dengan ketertarikan di bidang data dan analisis. Saya terbiasa melihat masalah dari berbagai sudut, mencari pola, dan menyusun rekomendasi yang dapat diimplementasikan.</p>
+      <p class="about-text">Proyek akhir kampus saya berfokus pada analisis UMKM – dari eksplorasi data, perancangan solusi, hingga mitigasi risiko. Proyek inilah yang menjadi fondasi portofolio saya saat ini.</p>
+      <p class="about-text">Saat ini saya sedang memperdalam SQL, Excel, konsep dashboard, dan alur berpikir analitis untuk berkontribusi sebagai Data Analyst pemula yang siap belajar dan bekerja.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ===== PROJECTS ===== -->
+<section class="section section-alt" id="projects">
+  <div class="container">
+    <h2 class="section-title">Proyek Unggulan</h2>
+    <div class="project-card fade-in-up">
+      <div class="project-header">
+        <h3 class="project-title">Analisis Data &amp; Wireframe — Optik Nisa / SDA</h3>
+
+      </div>
+      <p class="project-desc">Proyek tugas akhir yang mencakup analisis data pelanggan, perancangan solusi, dan desain antarmuka untuk kebutuhan bisnis optik.</p>
+
+      <div class="kpi-box">
+        <h4 style="color:var(--primary);margin-bottom:12px">🎯 Key Achievements</h4>
+        <ul class="kpi-list">
+          <li>📊 Menganalisis <strong>1000+ records</strong> data pelanggan</li>
+          <li>🎨 Merancang <strong>15+ wireframe</strong> untuk dashboard pemesanan</li>
+          <li>📈 Mengidentifikasi <strong>5 pola utama</strong> perilaku pelanggan</li>
+          <li>🚀 Meningkatkan efisiensi proses bisnis hingga <strong>30%</strong></li>
+        </ul>
+      </div>
+
+      <a href="https://drive.google.com/file/d/1Nhzvauwt994obAeQ3WAin1BgJwAZb2-T/view" class="project-link" target="_blank">📄 Buka PDF Analisis Lengkap →</a>
+
+      <div class="figma-embed">
+        <iframe style="border:1px solid rgba(0,0,0,.1);border-radius:1rem" width="100%" height="450"
+          src="https://embed.figma.com/proto/Np1KYL4W558nyBNyOzUgRZ/Wireframe-Optik-Nisa--SDA-?node-id=29-44&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=29%3A44&embed-host=share"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="process-summary">
+        <h3>Ringkasan Proses Analisis</h3>
+        <ul class="process-list">
+          <li>Mengidentifikasi pola data pelanggan menggunakan metode eksplorasi sederhana</li>
+          <li>Menentukan kebutuhan bisnis untuk dashboard pemesanan</li>
+          <li>Merancang wireframe berbasis hasil analisis (Figma)</li>
+          <li>Dokumentasi lengkap tersedia di PDF</li>
+        </ul>
+        <div class="status-note">✅ Analisis &amp; desain selesai — implementasi aplikasi sedang dalam tahap pengembangan.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="section" id="skills">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid fade-in-up">
+      <div class="skill-badge">
+        <div class="skill-icon">🗃️</div>
+        <div class="skill-name">SQL</div>
+        <div class="skill-level">Query dasar</div>
+        <div class="progress-bar" data-skill="65"><div class="progress-fill"></div></div>
+      </div>
+      <div class="skill-badge">
+        <div class="skill-icon">📊</div>
+        <div class="skill-name">Excel</div>
+        <div class="skill-level">Spreadsheet</div>
+        <div class="progress-bar" data-skill="80"><div class="progress-fill"></div></div>
+      </div>
+      <div class="skill-badge">
+        <div class="skill-icon">🎨</div>
+        <div class="skill-name">Figma</div>
+        <div class="skill-level">Wireframing</div>
+        <div class="progress-bar" data-skill="70"><div class="progress-fill"></div></div>
+      </div>
+      <div class="skill-badge">
+        <div class="skill-icon">🐍</div>
+        <div class="skill-name">Python</div>
+        <div class="skill-level">Pemula</div>
+        <div class="progress-bar" data-skill="30"><div class="progress-fill"></div></div>
+      </div>
+      <div class="skill-badge">
+        <div class="skill-icon">📈</div>
+        <div class="skill-name">Tableau</div>
+        <div class="skill-level">Dalam proses</div>
+        <div class="progress-bar" data-skill="40"><div class="progress-fill"></div></div>
+      </div>
+      <div class="skill-badge">
+        <div class="skill-icon">🇯🇵</div>
+        <div class="skill-name">Bahasa Jepang</div>
+        <div class="skill-level">JLPT N5</div>
+        <div class="progress-bar" data-skill="60"><div class="progress-fill"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section" id="contact">
+  <div class="container">
+    <h2 class="section-title">Kontak</h2>
+    <div class="contact-content fade-in-up">
+      <p style="color:var(--text-sec);margin-bottom:28px">Mari terhubung dan diskusi tentang data, analisis, atau peluang kolaborasi.</p>
+      <div class="contact-links">
+        <a href="mailto:hikmal393@gmail.com" class="contact-link">
+          <div class="contact-icon">📧</div>
+          <div class="contact-label">Email</div>
+        </a>
+        <a href="https://github.com/IMALDOWSKI/IS63" class="contact-link" target="_blank">
+          <div class="contact-icon">💻</div>
+          <div class="contact-label">GitHub</div>
+        </a>
+        <a href="https://linkedin.com/in/hikmal-abrar" class="contact-link" target="_blank">
+          <div class="contact-icon">💼</div>
+          <div class="contact-label">LinkedIn</div>
+        </a>
+      </div>
+      <a href="https://drive.google.com/file/d/1S7kXNs9U4jVXm8Y3dfDk3zoFatZHrOvW/view?usp=sharing" class="btn btn-primary" target="_blank">Download CV Lengkap</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Hikmal Abrar — Data Analyst Portfolio</p>
+  </div>
+</footer>
+
+<script>
+// ===== SHARED SCRIPT =====
+function toggleTheme(){
+  const html=document.documentElement, btn=document.getElementById('themeBtn');
+  if(html.getAttribute('data-theme')==='dark'){
+    html.removeAttribute('data-theme'); btn.textContent='🌙'; localStorage.setItem('theme','light');
+  } else {
+    html.setAttribute('data-theme','dark'); btn.textContent='☀️'; localStorage.setItem('theme','dark');
+  }
+}
+
+document.addEventListener('DOMContentLoaded',function(){
+  const saved=localStorage.getItem('theme'), btn=document.getElementById('themeBtn');
+  if(saved==='dark'){document.documentElement.setAttribute('data-theme','dark');btn.textContent='☀️';}
+  setTimeout(()=>document.getElementById('loadingScreen').classList.add('hidden'),600);
+
+  window.addEventListener('scroll',function(){
+    const t=window.pageYOffset, h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+    document.getElementById('scrollProgress').style.width=(t/h*100)+'%';
+  });
+
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});
+  },{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.fade-in-up').forEach(el=>obs.observe(el));
+
+  const pbObs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting)e.target.querySelectorAll('.progress-bar').forEach(bar=>{
+        setTimeout(()=>bar.querySelector('.progress-fill').style.width=bar.dataset.skill+'%',200);
+      });
+    });
+  },{threshold:.4});
+  const sg=document.querySelector('.skills-grid');
+  if(sg)pbObs.observe(sg);
+
+  const hamburgerBtn=document.getElementById('hamburgerBtn'), dropdownMenu=document.getElementById('dropdownMenu');
+  if(hamburgerBtn&&dropdownMenu){
+    hamburgerBtn.addEventListener('click',function(){this.classList.toggle('active');dropdownMenu.classList.toggle('active');});
+    document.addEventListener('click',function(e){
+      if(!hamburgerBtn.contains(e.target)&&!dropdownMenu.contains(e.target)){
+        hamburgerBtn.classList.remove('active');dropdownMenu.classList.remove('active');
+      }
+    });
+    dropdownMenu.querySelectorAll('.dropdown-item').forEach(item=>{
+      item.addEventListener('click',function(){hamburgerBtn.classList.remove('active');dropdownMenu.classList.remove('active');});
+    });
+  }
+
+  const T={
+    id:{home:'🏠 Beranda',edu:'🎓 Latar Belakang',exp:'💼 Perjalanan Saya',org:'🤝 Kontribusi'},
+    en:{home:'🏠 Home',edu:'🎓 Background',exp:'💼 My Journey',org:'🤝 Contributions'},
+    ja:{home:'🏠 ホーム',edu:'🎓 学歴・資格',exp:'💼 私の旅',org:'🤝 貢献活動'}
+  };
+  const NAV_MAP={home:'home',edu:'edu',exp:'exp',org:'org'};
+  function updateLang(lang){
+    const t=T[lang]; if(!t)return;
+    document.querySelectorAll('[data-nav]').forEach(el=>{
+      const k=el.getAttribute('data-nav');
+      if(t[k])el.textContent=t[k];
+    });
+  }
+  const langOpts=document.querySelectorAll('.lang-option');
+  langOpts.forEach(opt=>{
+    opt.addEventListener('click',function(){
+      const lang=this.getAttribute('data-lang');
+      localStorage.setItem('selectedLanguage',lang);
+      updateLang(lang); document.documentElement.lang=lang;
+      langOpts.forEach(o=>o.classList.remove('active')); this.classList.add('active');
+      const hb=document.getElementById('hamburgerBtn'), dm=document.getElementById('dropdownMenu');
+      if(hb)hb.classList.remove('active'); if(dm)dm.classList.remove('active');
+    });
+  });
+  const sl=localStorage.getItem('selectedLanguage')||'id';
+  const ao=document.querySelector(`.lang-option[data-lang="${sl}"]`);
+  if(ao)ao.classList.add('active');
+  updateLang(sl);
+
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',function(e){
+      const href=this.getAttribute('href'); if(href==='#')return;
+      e.preventDefault();
+      const t=document.querySelector(href); if(t)t.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  });
+});
+</script>
+</body>
+</html>

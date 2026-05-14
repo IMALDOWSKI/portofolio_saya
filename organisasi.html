@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organisasi - Hikmal Abrar</title>
+<meta name="description" content="Pengalaman organisasi Hikmal Abrar - Data Analyst">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+<link rel="stylesheet" href="style.css">
+<meta property="og:title" content="Organisasi — Hikmal Abrar">
+<meta property="og:description" content="Portfolio Hikmal Abrar — Data Analyst yang mengubah data menjadi wawasan jelas dan dapat ditindaklanjuti.">
+<meta property="og:image" content="https://i.imgur.com/Rub0ZQ6.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+<div class="loading-screen" id="loadingScreen"><div class="loader"></div></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme" id="themeBtn">🌙</button>
+
+<!-- ===== HEADER NAVIGATION ===== -->
+<header class="header-nav">
+  <div class="container">
+    <nav class="nav-menu">
+      <div class="nav-brand">
+        <a href="index.html" class="brand-link">Hikmal Abrar</a>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-item-dropdown">
+          <a href="index.html" class="nav-item " data-nav="home">🏠 Beranda</a>
+          <div class="dropdown-submenu">
+            <a href="index.html#about" class="dropdown-item">👤 Tentang Saya</a>
+            <a href="index.html#skills" class="dropdown-item">⚡ Skills</a>
+            <a href="index.html#projects" class="dropdown-item">🗂️ Proyek</a>
+            <a href="index.html#contact" class="dropdown-item">📬 Kontak</a>
+          </div>
+        </li>
+        <li class="nav-item-dropdown">
+          <a href="#" class="nav-item " data-nav="edu">🎓 Latar Belakang</a>
+          <div class="dropdown-submenu">
+            <a href="pendidikan.html" class="dropdown-item">🏫 Pendidikan Formal</a>
+            <a href="sertifikasi_pelatihan.html" class="dropdown-item">📜 Sertifikasi &amp; Pelatihan</a>
+          </div>
+        </li>
+        <li class="nav-item-dropdown">
+          <a href="#" class="nav-item " data-nav="exp">💼 Perjalanan Saya</a>
+          <div class="dropdown-submenu">
+            <a href="pengalaman_kerja.html" class="dropdown-item">🏢 Pengalaman Kerja</a>
+            <a href="volunteer.html" class="dropdown-item">❤️ Volunteer</a>
+          </div>
+        </li>
+        <li class="nav-item-dropdown">
+          <a href="#" class="nav-item active" data-nav="org">🤝 Kontribusi</a>
+          <div class="dropdown-submenu">
+            <a href="organisasi.html" class="dropdown-item">🏛️ Organisasi</a>
+            <a href="organisasi.html#community" class="dropdown-item">🌱 Komunitas</a>
+          </div>
+        </li>
+      </ul>
+      <div class="nav-controls">
+        <a href="https://wa.me/6282179736557?text=Hi%20Hikmal,%20I%20would%20like%20to%20hire%20you%20for%20a%20project"
+           class="btn btn-hire" target="_blank" title="Hire Me via WhatsApp">
+          <span>💼</span> Hire Me
+        </a>
+        <div class="hamburger-menu">
+          <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          <div class="dropdown-menu" id="dropdownMenu">
+            <div class="dropdown-section">
+              <h4 class="dropdown-title">Bahasa / Language</h4>
+              <div class="lang-options">
+                <button class="lang-option" data-lang="id">🇮🇩 Indonesia</button>
+                <button class="lang-option" data-lang="en">🇬🇧 English</button>
+                <button class="lang-option" data-lang="ja">🇯🇵 日本語</button>
+              </div>
+            </div>
+            <div class="dropdown-section">
+              <h4 class="dropdown-title">Halaman</h4>
+              <a href="index.html" class="dropdown-item">🏠 Beranda</a>
+              <a href="pendidikan.html" class="dropdown-item">🎓 Pendidikan</a>
+              <a href="pengalaman_kerja.html" class="dropdown-item">💼 Pengalaman Kerja</a>
+              <a href="volunteer.html" class="dropdown-item">❤️ Volunteer</a>
+              <a href="organisasi.html" class="dropdown-item">🏛️ Organisasi</a>
+              <a href="sertifikasi_pelatihan.html" class="dropdown-item">📜 Sertifikasi</a>
+            </div>
+            <div class="dropdown-section">
+              <h4 class="dropdown-title">Aksi Cepat</h4>
+              <a href="https://drive.google.com/file/d/1S7kXNs9U4jVXm8Y3dfDk3zoFatZHrOvW/view?usp=sharing" class="dropdown-item" target="_blank">📄 Download CV</a>
+              <a href="index.html#contact" class="dropdown-item">💬 Hubungi Saya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content fade-in-up">
+      <div class="hero-text">
+        <h1>Organisasi</h1>
+        <div class="role">Pengalaman Kepemimpinan & Kolaborasi</div>
+        <div class="tagline">"Membangun kemampuan interpersonal dan kontribusi sosial melalui organisasi"</div>
+        <div class="hero-buttons">
+          <a href="index.html" class="btn btn-secondary">← Kembali ke Beranda</a>
+          <a href="volunteer.html" class="btn btn-primary">Lihat Volunteer →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ORGANIZATION ===== -->
+<section class="section section-alt" id="organization">
+  <div class="container">
+    <h2 class="section-title">Pengalaman Organisasi</h2>
+
+    <!-- Student Community LP3I -->
+    <div class="card fade-in-up" style="margin-bottom:30px">
+      <div class="org-header">
+        <span class="org-icon-wrap">🎓</span>
+        <div class="org-info">
+          <div class="org-title">Student Community LP3I</div>
+          <div class="org-role">HAIC Division</div>
+          <div class="org-period">📅 2024 – 2025</div>
+        </div>
+        <span class="badge-completed-blue">Banda Aceh</span>
+      </div>
+      <p class="card-desc">Saya bergabung dengan Student Community (SC) di LP3I College pada tahun pertama perkuliahan sebagai bagian dari upaya untuk mengembangkan diri di luar kegiatan akademik. SC merupakan wadah mahasiswa yang bertujuan untuk mengasah keterampilan, memperluas relasi, serta membangun kekompakan antar mahasiswa.</p>
+      <p class="card-desc">Di dalam SC, saya tergabung dalam salah satu divisi bernama HAIC, yang berfokus pada pengembangan minat dan hobi mahasiswa melalui berbagai aktivitas bersama. Salah satu kegiatan yang rutin dilakukan adalah olahraga futsal, yang menjadi sarana untuk membangun kerja sama tim sekaligus menjaga keseimbangan antara aktivitas akademik dan non-akademik.</p>
+
+        <div class="zz-item">
+          <div class="zz-photo">
+            <img src="https://i.imgur.com/51mzOcH.jpeg" alt="Student Community LP3I - Kegiatan Bersama" loading="lazy">
+
+          </div>
+          <p class="zz-caption">Meskipun keterlibatan saya lebih banyak pada partisipasi aktif dalam kegiatan dibandingkan peran teknis atau struktural, pengalaman ini memberikan saya banyak pembelajaran, terutama dalam hal beradaptasi dengan lingkungan baru, membangun relasi, serta memahami dinamika kerja sama dalam tim.</p>
+
+      </div>
+      <p class="card-desc">Melalui interaksi yang konsisten dengan berbagai karakter individu, saya belajar bagaimana menyesuaikan diri, berkomunikasi dengan lebih efektif, dan menjadi bagian dari lingkungan yang suportif. Pengalaman ini menjadi salah satu fondasi dalam mengembangkan kemampuan interpersonal yang juga saya terapkan dalam pengalaman kerja dan pengembangan diri lainnya.</p>
+
+    </div>
+
+    <!-- Pemuda BTN Glee Madat Ceudah -->
+    <div class="card fade-in-up" style="margin-bottom:0">
+      <div class="org-header">
+        <span class="org-icon-wrap">🏛️</span>
+        <div class="org-info">
+          <div class="org-title">Pemuda BTN Glee Madat Ceudah</div>
+          <div class="org-role">Anggota Aktif</div>
+          <div class="org-period">📅 2019 – Sekarang</div>
+        </div>
+        <span class="badge-completed-blue">Dewantara</span>
+      </div>
+      <p class="card-desc">Saya aktif sebagai bagian dari Pemuda Glee Madat Ceudah, sebuah organisasi kepemudaan yang berfokus pada kegiatan sosial, keagamaan, serta pengembangan kebersamaan di lingkungan masyarakat.</p>
+      <p class="card-desc">Selama bergabung, saya terlibat dalam berbagai kegiatan seperti perayaan Maulid Nabi, musabaqah, serta perayaan Hari Kemerdekaan (17 Agustus) yang diselenggarakan secara meriah dan melibatkan seluruh lapisan masyarakat. Dalam kegiatan 17 Agustus, kami merancang berbagai perlombaan yang bertujuan untuk membangun kebersamaan dan menciptakan suasana yang penuh semangat di tengah masyarakat.</p>
+      <p class="card-desc">Dalam setiap kegiatan tersebut, saya sering dipercaya untuk menangani bidang publikasi dan dokumentasi (pubdok), memanfaatkan kemampuan dasar saya dalam fotografi untuk mengabadikan momen serta mendukung kebutuhan dokumentasi organisasi. Peran ini menuntut saya untuk peka terhadap momen, memahami alur acara, serta mampu menangkap sisi terbaik dari setiap kegiatan yang berlangsung.</p>
+
+      
+        <div class="zz-item">
+          <div class="zz-photo">
+            <img src="https://i.imgur.com/dq02JLx.jpeg" alt="GMC – Maulid & Musabaqah" loading="lazy">
+
+          </div>
+          <p class="zz-caption">Selain peran teknis, saya juga aktif dalam diskusi dan rapat organisasi. Saya terbiasa mengamati kondisi di lapangan, memahami dinamika tim, serta memberikan saran dan masukan berdasarkan hasil observasi tersebut. Pendekatan ini membantu saya dalam berkontribusi tidak hanya secara teknis, tetapi juga dalam pengambilan keputusan secara sederhana di dalam tim.</p>
+        </div>
+
+        <div class="zz-item reverse">
+          <div class="zz-photo">
+            <img src="https://i.imgur.com/8PEKg2E.jpeg" alt="GMC – Publikasi & Dokumentasi" loading="lazy">
+
+          </div>
+          <p class="zz-caption">Dalam prosesnya, saya menghadapi berbagai tantangan seperti koordinasi antar anggota, keterbatasan sumber daya, serta kondisi yang tidak selalu berjalan sesuai rencana. Namun, melalui komunikasi dan kerja sama yang baik, setiap kegiatan dapat terlaksana dengan lancar.</p>
+        </div>
+
+        <div class="zz-item">
+          <div class="zz-photo">
+            <img src="https://i.imgur.com/IDBvUYa.jpeg" alt="GMC – Diskusi & Rapat" loading="lazy">
+
+          </div>
+          <p class="zz-caption">Selain kegiatan utama organisasi, saya juga pernah terlibat dalam aksi sosial bersama tim pemuda, yang kemudian menjadi salah satu pengalaman volunteer yang memberikan dampak besar bagi saya secara pribadi.</p>
+        </div>
+
+        <div class="zz-item reverse">
+          <div class="zz-photo">
+            <img src="https://i.imgur.com/7f6UJdr.jpeg" alt="GMC – 17 Agustus" loading="lazy">
+
+          </div>
+          <p class="zz-caption">Melalui pengalaman ini, saya belajar untuk bekerja dalam tim, berkomunikasi secara efektif, serta mengembangkan kemampuan observasi dan analisis dalam konteks sosial. Bagi saya, organisasi ini menjadi ruang untuk berkembang sekaligus berkontribusi bagi lingkungan sekitar.</p>
+        </div>
+
+        <div class="zz-item">
+          <div class="zz-photo">
+            <img src="https://i.imgur.com/gBoQKq8.jpeg" alt="GMC – Bantuan Banjir Aceh" loading="lazy">
+
+          </div>
+          <p class="zz-caption">Saya terlibat sebagai relawan dalam aksi bantuan saat terjadi banjir di Aceh, sebuah pengalaman yang memberikan dampak besar terhadap cara pandang saya terhadap kepedulian sosial dan kerja tim di lapangan.</p>
+        </div>
+
+        <div class="zz-item reverse">
+          <div class="zz-photo">
+            <img src="https://i.imgur.com/lKJFJLS.jpeg" alt="GMC – Distribusi Bantuan Warga" loading="lazy">
+
+          </div>
+          <p class="zz-caption">Dalam kegiatan tersebut, saya tidak hanya bertugas sebagai dokumentasi, tetapi juga ikut terlibat langsung dalam proses distribusi bantuan. Saya membantu mengangkat dan menyalurkan barang kebutuhan kepada masyarakat terdampak, serta berinteraksi langsung dengan warga untuk memastikan bantuan dapat diterima dengan baik.</p>
+        </div>
+
+        <div class="zz-item">
+          <div class="zz-photo">
+            <img src="https://i.imgur.com/Q39WV7s.jpeg" alt="GMC – Refleksi" loading="lazy">
+
+          </div>
+          <p class="zz-caption">Kondisi di lapangan saat itu cukup berat, dengan situasi yang ramai, tidak teratur, dan penuh tekanan. Banyaknya warga yang membutuhkan bantuan dalam waktu bersamaan membuat proses distribusi harus dilakukan dengan cepat namun tetap terarah. Dalam situasi tersebut, saya belajar untuk tetap tenang, membaca kondisi sekitar, serta menyesuaikan tindakan agar tetap efektif di tengah keterbatasan.</p>
+        </div>
+
+        <div class="zz-item reverse">
+          <div class="zz-photo">
+            <img src="https://i.imgur.com/cQWkq6Y.jpeg" alt="GMC – Distribusi Bantuan Warga" loading="lazy">
+
+          </div>
+          <p class="zz-caption">Secara pribadi, pengalaman ini memberikan kesan yang sangat mendalam. Saya merasakan langsung bagaimana kondisi masyarakat yang terdampak, yang tidak hanya membutuhkan bantuan secara fisik, tetapi juga perhatian dan kepedulian. Interaksi langsung dengan warga menjadi salah satu momen yang paling membekas, karena saya dapat melihat secara nyata dampak dari kontribusi yang kami berikan.</p>
+        </div>
+
+        <div class="zz-item">
+          <div class="zz-photo">
+            <img src="https://i.imgur.com/YQdIiKt.jpeg" alt="GMC – Kegiatan Tambahan" loading="lazy">
+
+          </div>
+          <p class="zz-caption">Pengalaman ini menunjukkan bahwa organisasi tidak hanya tentang kegiatan formal, tetapi juga tentang bagaimana kita bisa memberikan dampak positif bagi masyarakat luas melalui berbagai inisiatif sosial.</p>
+        </div>
+
+        <div class="zz-item reverse">
+          <div class="zz-photo">
+            <img src="https://i.imgur.com/qLXbViw.jpeg" alt="GMC – Kegiatan Tambahan" loading="lazy">
+
+          </div>
+          <p class="zz-caption">Melalui berbagai kegiatan, saya belajar pentingnya kolaborasi dan komunikasi efektif dalam mencapai tujuan bersama.</p>
+        </div>
+
+        <div class="zz-item">
+          <div class="zz-photo">
+            <img src="https://i.imgur.com/xeAUBRp.jpeg" alt="GMC – Kegiatan Tambahan" loading="lazy">
+
+          </div>
+          <p class="zz-caption">Semua pengalaman ini membentuk karakter dan memberikan pembelajaran berharga yang akan saya bawa dalam perjalanan hidup dan karir saya.</p>
+        </div>
+    <p class="card-desc">Melalui kegiatan ini, saya belajar bahwa kerja tim, empati, dan kemampuan beradaptasi sangat penting dalam situasi darurat. Pengalaman ini juga memperkuat nilai dalam diri saya untuk tidak hanya berkembang secara individu, tetapi juga mampu memberikan kontribusi yang berarti bagi lingkungan sekitar. </p> 
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section" id="contact">
+  <div class="container">
+    <h2 class="section-title">Kontak</h2>
+    <div class="contact-content fade-in-up">
+      <p class="about-text">Tertarik untuk berdiskusi lebih lanjut tentang pengalaman organisasi atau kolaborasi?</p>
+      <div class="contact-links">
+        <a href="mailto:hikmal393@gmail.com" class="contact-link">
+          <span class="contact-icon">📧</span>
+          <span class="contact-label">Email</span>
+        </a>
+        <a href="https://linkedin.com/in/hikmalabrar" class="contact-link" target="_blank">
+          <span class="contact-icon">💼</span>
+          <span class="contact-label">LinkedIn</span>
+        </a>
+        <a href="https://wa.me/6282179736557" class="contact-link" target="_blank">
+          <span class="contact-icon">💬</span>
+          <span class="contact-label">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Hikmal Abrar — Data Analyst Portfolio</p>
+  </div>
+</footer>
+
+<script>
+// ===== SHARED SCRIPT =====
+function toggleTheme(){
+  const html=document.documentElement, btn=document.getElementById('themeBtn');
+  if(html.getAttribute('data-theme')==='dark'){
+    html.removeAttribute('data-theme'); btn.textContent='🌙'; localStorage.setItem('theme','light');
+  } else {
+    html.setAttribute('data-theme','dark'); btn.textContent='☀️'; localStorage.setItem('theme','dark');
+  }
+}
+
+document.addEventListener('DOMContentLoaded',function(){
+  const saved=localStorage.getItem('theme'), btn=document.getElementById('themeBtn');
+  if(saved==='dark'){document.documentElement.setAttribute('data-theme','dark');btn.textContent='☀️';}
+  setTimeout(()=>document.getElementById('loadingScreen').classList.add('hidden'),600);
+
+  window.addEventListener('scroll',function(){
+    const t=window.pageYOffset, h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+    document.getElementById('scrollProgress').style.width=(t/h*100)+'%';
+  });
+
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});
+  },{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.fade-in-up').forEach(el=>obs.observe(el));
+
+  const pbObs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting)e.target.querySelectorAll('.progress-bar').forEach(bar=>{
+        setTimeout(()=>bar.querySelector('.progress-fill').style.width=bar.dataset.skill+'%',200);
+      });
+    });
+  },{threshold:.4});
+  const sg=document.querySelector('.skills-grid');
+  if(sg)pbObs.observe(sg);
+
+  const hamburgerBtn=document.getElementById('hamburgerBtn'), dropdownMenu=document.getElementById('dropdownMenu');
+  if(hamburgerBtn&&dropdownMenu){
+    hamburgerBtn.addEventListener('click',function(){this.classList.toggle('active');dropdownMenu.classList.toggle('active');});
+    document.addEventListener('click',function(e){
+      if(!hamburgerBtn.contains(e.target)&&!dropdownMenu.contains(e.target)){
+        hamburgerBtn.classList.remove('active');dropdownMenu.classList.remove('active');
+      }
+    });
+    dropdownMenu.querySelectorAll('.dropdown-item').forEach(item=>{
+      item.addEventListener('click',function(){hamburgerBtn.classList.remove('active');dropdownMenu.classList.remove('active');});
+    });
+  }
+
+  const T={
+    id:{home:'🏠 Beranda',edu:'🎓 Latar Belakang',exp:'💼 Perjalanan Saya',org:'🤝 Kontribusi'},
+    en:{home:'🏠 Home',edu:'🎓 Background',exp:'💼 My Journey',org:'🤝 Contributions'},
+    ja:{home:'🏠 ホーム',edu:'🎓 学歴・資格',exp:'💼 私の旅',org:'🤝 貢献活動'}
+  };
+  const NAV_MAP={home:'home',edu:'edu',exp:'exp',org:'org'};
+  function updateLang(lang){
+    const t=T[lang]; if(!t)return;
+    document.querySelectorAll('[data-nav]').forEach(el=>{
+      const k=el.getAttribute('data-nav');
+      if(t[k])el.textContent=t[k];
+    });
+  }
+  const langOpts=document.querySelectorAll('.lang-option');
+  langOpts.forEach(opt=>{
+    opt.addEventListener('click',function(){
+      const lang=this.getAttribute('data-lang');
+      localStorage.setItem('selectedLanguage',lang);
+      updateLang(lang); document.documentElement.lang=lang;
+      langOpts.forEach(o=>o.classList.remove('active')); this.classList.add('active');
+      const hb=document.getElementById('hamburgerBtn'), dm=document.getElementById('dropdownMenu');
+      if(hb)hb.classList.remove('active'); if(dm)dm.classList.remove('active');
+    });
+  });
+  const sl=localStorage.getItem('selectedLanguage')||'id';
+  const ao=document.querySelector(`.lang-option[data-lang="${sl}"]`);
+  if(ao)ao.classList.add('active');
+  updateLang(sl);
+
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',function(e){
+      const href=this.getAttribute('href'); if(href==='#')return;
+      e.preventDefault();
+      const t=document.querySelector(href); if(t)t.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  });
+});
+</script>
+
+</body>
+</html>

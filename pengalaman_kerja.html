@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pengalaman Kerja - Hikmal Abrar</title>
+<meta name="description" content="Pengalaman kerja Hikmal Abrar - Data Analyst">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+<link rel="stylesheet" href="style.css">
+<meta property="og:title" content="Pengalaman Kerja — Hikmal Abrar">
+<meta property="og:description" content="Portfolio Hikmal Abrar — Data Analyst yang mengubah data menjadi wawasan jelas dan dapat ditindaklanjuti.">
+<meta property="og:image" content="https://i.imgur.com/Rub0ZQ6.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+<div class="loading-screen" id="loadingScreen"><div class="loader"></div></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme" id="themeBtn">🌙</button>
+
+<!-- ===== HEADER NAVIGATION ===== -->
+<header class="header-nav">
+  <div class="container">
+    <nav class="nav-menu">
+      <div class="nav-brand">
+        <a href="index.html" class="brand-link">Hikmal Abrar</a>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-item-dropdown">
+          <a href="index.html" class="nav-item " data-nav="home">🏠 Beranda</a>
+          <div class="dropdown-submenu">
+            <a href="index.html#about" class="dropdown-item">👤 Tentang Saya</a>
+            <a href="index.html#skills" class="dropdown-item">⚡ Skills</a>
+            <a href="index.html#projects" class="dropdown-item">🗂️ Proyek</a>
+            <a href="index.html#contact" class="dropdown-item">📬 Kontak</a>
+          </div>
+        </li>
+        <li class="nav-item-dropdown">
+          <a href="#" class="nav-item " data-nav="edu">🎓 Latar Belakang</a>
+          <div class="dropdown-submenu">
+            <a href="pendidikan.html" class="dropdown-item">🏫 Pendidikan Formal</a>
+            <a href="sertifikasi_pelatihan.html" class="dropdown-item">📜 Sertifikasi &amp; Pelatihan</a>
+          </div>
+        </li>
+        <li class="nav-item-dropdown">
+          <a href="#" class="nav-item active" data-nav="exp">💼 Perjalanan Saya</a>
+          <div class="dropdown-submenu">
+            <a href="pengalaman_kerja.html" class="dropdown-item">🏢 Pengalaman Kerja</a>
+            <a href="volunteer.html" class="dropdown-item">❤️ Volunteer</a>
+          </div>
+        </li>
+        <li class="nav-item-dropdown">
+          <a href="#" class="nav-item " data-nav="org">🤝 Kontribusi</a>
+          <div class="dropdown-submenu">
+            <a href="organisasi.html" class="dropdown-item">🏛️ Organisasi</a>
+            <a href="organisasi.html#community" class="dropdown-item">🌱 Komunitas</a>
+          </div>
+        </li>
+      </ul>
+      <div class="nav-controls">
+        <a href="https://wa.me/6282179736557?text=Hi%20Hikmal,%20I%20would%20like%20to%20hire%20you%20for%20a%20project"
+           class="btn btn-hire" target="_blank" title="Hire Me via WhatsApp">
+          <span>💼</span> Hire Me
+        </a>
+        <div class="hamburger-menu">
+          <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          <div class="dropdown-menu" id="dropdownMenu">
+            <div class="dropdown-section">
+              <h4 class="dropdown-title">Bahasa / Language</h4>
+              <div class="lang-options">
+                <button class="lang-option" data-lang="id">🇮🇩 Indonesia</button>
+                <button class="lang-option" data-lang="en">🇬🇧 English</button>
+                <button class="lang-option" data-lang="ja">🇯🇵 日本語</button>
+              </div>
+            </div>
+            <div class="dropdown-section">
+              <h4 class="dropdown-title">Halaman</h4>
+              <a href="index.html" class="dropdown-item">🏠 Beranda</a>
+              <a href="pendidikan.html" class="dropdown-item">🎓 Pendidikan</a>
+              <a href="pengalaman_kerja.html" class="dropdown-item">💼 Pengalaman Kerja</a>
+              <a href="volunteer.html" class="dropdown-item">❤️ Volunteer</a>
+              <a href="organisasi.html" class="dropdown-item">🏛️ Organisasi</a>
+              <a href="sertifikasi_pelatihan.html" class="dropdown-item">📜 Sertifikasi</a>
+            </div>
+            <div class="dropdown-section">
+              <h4 class="dropdown-title">Aksi Cepat</h4>
+              <a href="https://drive.google.com/file/d/1S7kXNs9U4jVXm8Y3dfDk3zoFatZHrOvW/view?usp=sharing" class="dropdown-item" target="_blank">📄 Download CV</a>
+              <a href="index.html#contact" class="dropdown-item">💬 Hubungi Saya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content fade-in-up">
+      <div class="hero-text">
+        <h1>Pengalaman Kerja</h1>
+        <div class="role">Jejak Karir Profesional Saya</div>
+        <div class="tagline">"Membangun fondasi analitis melalui pengalaman kerja yang beragam"</div>
+        <div class="hero-buttons">
+          <a href="index.html" class="btn btn-secondary">← Kembali ke Beranda</a>
+          <a href="organisasi.html" class="btn btn-primary">Lihat Organisasi →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section class="section" id="experience">
+  <div class="container">
+    <h2 class="section-title">Pengalaman Kerja</h2>
+
+    <!-- SimpangLima Grocery -->
+    <div class="card fade-in-up" style="margin-bottom:30px">
+      <div class="card-header">
+        <div>
+          <div class="card-company">SimpangLima Grocery</div>
+          <div class="card-title">Staff Produksi</div>
+          <div class="card-period">📅 2024 – Sekarang</div>
+        </div>
+        <span class="badge badge-completed-blue">Banda Aceh</span>
+      </div>
+      <p class="card-desc">Saya bekerja sebagai Production Staff di SimpangLima Grocery pada tahun 2024, dengan tanggung jawab utama dalam proses pengolahan dan persiapan produk, mulai dari repacking bahan seperti sayur, buah, roti, hingga daging, serta terlibat langsung dalam pembuatan produk siap saji seperti marinasi, sandwich, dan jus.</p>
+      <p class="card-desc">Lingkungan kerja yang dinamis membuat saya terbiasa menghadapi tekanan tinggi dan deadline yang tidak menentu. Dalam satu waktu, saya dapat menangani beberapa jenis pekerjaan sekaligus, termasuk memenuhi permintaan dalam jumlah besar dari sistem pre-order (PO) mitra, di samping tugas harian lainnya.</p>
+      <p class="card-desc">Salah satu pengalaman yang paling menantang adalah ketika saya diberikan tanggung jawab untuk menangani banyak pekerjaan secara bersamaan selama beberapa hari, mulai dari repacking, menyiapkan pesanan PO dari beberapa mitra sekaligus, hingga memastikan ketersediaan produk seperti salad dan marinasi tetap terjaga. Dalam kondisi tersebut, saya mulai mengembangkan cara kerja berbasis prioritas dan alur proses yang lebih efisien, dengan menganalisis pekerjaan mana yang harus didahulukan dan bagaimana mengatur ritme kerja agar tetap stabil.</p>
+
+      <!-- Zigzag photos -->
+      
+        <div class="zz-item">
+          <div class="zz-photo">
+            <!-- ganti dengan: <img src="foto.jpg" alt="Area Kerja"> -->
+            <div class="ph-icon">📸</div>
+            <div class="ph-text">Area Kerja Repacking</div>
+            <div class="ph-sub">SimpangLima Grocery</div>
+          </div>
+          <p class="zz-caption">Selain tekanan pekerjaan, saya juga menghadapi tantangan dalam dinamika tim, di mana terkadang terjadi kurangnya koordinasi dan kecenderungan saling melempar tanggung jawab. Alih-alih ikut terbawa situasi, saya mencoba memahami pola kerja dan perilaku rekan tim terlebih dahulu, kemudian secara bertahap menyesuaikan pendekatan komunikasi dan cara kerja saya dengan mereka.</p>
+        </div>
+
+        <div class="zz-item reverse">
+          <div class="zz-photo">
+            <div class="ph-icon">📸</div>
+            <div class="ph-text">Proses Produksi</div>
+            <div class="ph-sub">Sistem Kerja Efisien</div>
+          </div>
+          <p class="zz-caption">Melalui proses tersebut, saya berhasil membangun hubungan kerja yang lebih baik dan secara perlahan membantu menciptakan suasana kerja yang lebih kompak dan kolaboratif. Perubahan ini tidak terjadi secara instan, namun melalui pendekatan yang konsisten dan adaptif.</p>
+        </div>
+
+        <div class="zz-item">
+          <div class="zz-photo">
+            <div class="ph-icon">📸</div>
+            <div class="ph-text">Quality Control</div>
+            <div class="ph-sub">Inventory Tracking</div>
+          </div>
+          <p class="zz-caption">Konsistensi dalam kinerja dan kemampuan saya dalam menangani tekanan akhirnya mendapat perhatian dari leader, di mana saya dipercaya untuk menangani lebih banyak tanggung jawab dan mendapatkan apresiasi atas performa kerja saya.</p>
+        </div>
+
+        <div class="zz-item reverse">
+          <div class="zz-photo">
+            <div class="ph-icon">📸</div>
+            <div class="ph-text">Proses Produksi</div>
+            <div class="ph-sub">Sistem Kerja Efisien</div>
+          </div>
+          <p class="zz-caption">Setelah beberapa waktu, saya memutuskan untuk resign karena harus memprioritaskan perkuliahan. Namun, beberapa bulan kemudian, saya dihubungi kembali oleh pihak perusahaan untuk bergabung kembali, yang menjadi salah satu bentuk kepercayaan terhadap kontribusi yang pernah saya berikan. Saat ini, saya memilih untuk berkontribusi sebagai part-time agar tetap dapat menyeimbangkan antara pekerjaan dan pendidikan.</p>
+        </div>
+
+      <p class="card-desc">Pengalaman ini membentuk saya menjadi pribadi yang lebih disiplin, adaptif, serta mampu berpikir sistematis dalam mengelola pekerjaan dan dinamika tim.</p>
+    
+      
+    </div>
+
+    <!-- Optik Nisa -->
+    <div class="card fade-in-up" style="margin-bottom:0">
+      <div class="card-header">
+        <div>
+          <div class="card-company">Optik Nisa</div>
+          <div class="card-title">Accounting Staff &amp; Optical Technician</div>
+          <div class="card-period">📅 2022 – 2024</div>
+        </div>
+        <span class="badge badge-completed-blue">Dewantara</span>
+      </div>
+      <p class="card-desc">Saya memulai perjalanan profesional saya di Optik Nisa pada tahun 2022, sebuah usaha optik yang telah berkembang sejak 2010 dan memiliki dua cabang di Aceh. Selama hampir dua tahun, saya terlibat langsung dalam keseluruhan proses layanan, mulai dari menerima pasien, melakukan pemeriksaan mata, hingga merakit kacamata sesuai kebutuhan pasien.</p>
+      <p class="card-desc">Di awal bekerja, saya menghadapi tantangan besar karena masih minimnya pemahaman saya terhadap optometri. Namun, kondisi tersebut justru mendorong saya untuk mengandalkan kemampuan analisis dalam memahami pola keluhan pasien. Saya belajar membaca respon pasien terhadap setiap percobaan lensa, mengidentifikasi perbedaan kecil dalam kenyamanan penglihatan, dan secara bertahap menemukan ukuran yang paling tepat.</p>
+      <p class="card-desc"></p>
+
+        <div class="zz-item">
+          <div class="zz-photo">
+            <div class="ph-icon">📸</div>
+            <div class="ph-text">Area Pelayanan</div>
+            <div class="ph-sub">Optik Nisa</div>
+          </div>
+          <p class="zz-caption">Pendekatan analitis ini juga saya terapkan dalam proses perakitan kacamata. Salah satu tantangan yang paling berkesan adalah saat menangani lensa dengan minus tinggi dan frame dengan banyak sudut. Proses ini menuntut ketelitian tinggi karena kesalahan kecil dapat berdampak pada kenyamanan pengguna. Dengan fokus dan perhitungan yang tepat, saya berhasil menyelesaikan perakitan tersebut sesuai standar yang diharapkan.</p>
+        </div>
+
+        <div class="zz-item reverse">
+          <div class="zz-photo">
+            <div class="ph-icon">📸</div>
+            <div class="ph-text">Workshop Kacamata</div>
+            <div class="ph-sub">Proses Perakitan</div>
+          </div>
+          <p class="zz-caption">Dalam keseharian, saya menangani jumlah pasien yang fluktuatif, dengan rata-rata lebih dari 6 pasien per hari saat kondisi ramai, masing-masing dengan keluhan yang berbeda. Saya terbiasa bekerja dalam tekanan, memastikan setiap pasien tetap mendapatkan pelayanan yang optimal tanpa mengurangi kualitas hasil.</p>
+        </div>
+
+        <div class="zz-item">
+          <div class="zz-photo">
+            <div class="ph-icon">📸</div>
+            <div class="ph-text">Data Analysis</div>
+            <div class="ph-sub">Business Intelligence</div>
+          </div>
+          <p class="zz-caption">Saya juga pernah menghadapi situasi komplain dari pelanggan terkait hasil kacamata yang kurang nyaman. Dalam situasi tersebut, saya memilih untuk tetap tenang, mendengarkan keluhan secara detail, dan melakukan analisis ulang terhadap hasil kerja sebelumnya. Saya menemukan adanya ketidakseimbangan pada lensa, kemudian mengambil keputusan untuk memperbaiki dengan mengganti dan merakit ulang secara lebih presisi. Hasilnya, pelanggan merasa puas dan tidak lagi mengalami kendala.</p>
+        </div>
+
+
+        <div class="zz-item reverse">
+          <div class="zz-photo">
+            <div class="ph-icon">📸</div>
+            <div class="ph-text">Workshop Kacamata</div>
+            <div class="ph-sub">Proses Perakitan</div>
+          </div>
+          <p class="zz-caption">Pengalaman ini mengajarkan saya bahwa ketelitian, fokus, dan kemampuan analisis bukan hanya penting dalam pekerjaan teknis, tetapi juga dalam memberikan solusi yang berdampak langsung bagi orang lain. Hal inilah yang menjadi fondasi saya dalam membangun pendekatan berpikir sebagai seorang Data Analyst.</p>
+        </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section" id="contact">
+  <div class="container">
+    <h2 class="section-title">Kontak</h2>
+    <div class="contact-content fade-in-up">
+      <p class="about-text">Tertarik untuk berdiskusi lebih lanjut tentang pengalaman kerja atau kolaborasi?</p>
+      <div class="contact-links">
+        <a href="mailto:hikmal393@gmail.com" class="contact-link">
+          <span class="contact-icon">📧</span>
+          <span class="contact-label">Email</span>
+        </a>
+        <a href="https://linkedin.com/in/hikmalabrar" class="contact-link" target="_blank">
+          <span class="contact-icon">💼</span>
+          <span class="contact-label">LinkedIn</span>
+        </a>
+        <a href="https://wa.me/6282179736557" class="contact-link" target="_blank">
+          <span class="contact-icon">💬</span>
+          <span class="contact-label">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Hikmal Abrar — Data Analyst Portfolio</p>
+  </div>
+</footer>
+
+<script>
+// ===== SHARED SCRIPT =====
+function toggleTheme(){
+  const html=document.documentElement, btn=document.getElementById('themeBtn');
+  if(html.getAttribute('data-theme')==='dark'){
+    html.removeAttribute('data-theme'); btn.textContent='🌙'; localStorage.setItem('theme','light');
+  } else {
+    html.setAttribute('data-theme','dark'); btn.textContent='☀️'; localStorage.setItem('theme','dark');
+  }
+}
+
+document.addEventListener('DOMContentLoaded',function(){
+  const saved=localStorage.getItem('theme'), btn=document.getElementById('themeBtn');
+  if(saved==='dark'){document.documentElement.setAttribute('data-theme','dark');btn.textContent='☀️';}
+  setTimeout(()=>document.getElementById('loadingScreen').classList.add('hidden'),600);
+
+  window.addEventListener('scroll',function(){
+    const t=window.pageYOffset, h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+    document.getElementById('scrollProgress').style.width=(t/h*100)+'%';
+  });
+
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});
+  },{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.fade-in-up').forEach(el=>obs.observe(el));
+
+  const pbObs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting)e.target.querySelectorAll('.progress-bar').forEach(bar=>{
+        setTimeout(()=>bar.querySelector('.progress-fill').style.width=bar.dataset.skill+'%',200);
+      });
+    });
+  },{threshold:.4});
+  const sg=document.querySelector('.skills-grid');
+  if(sg)pbObs.observe(sg);
+
+  const hamburgerBtn=document.getElementById('hamburgerBtn'), dropdownMenu=document.getElementById('dropdownMenu');
+  if(hamburgerBtn&&dropdownMenu){
+    hamburgerBtn.addEventListener('click',function(){this.classList.toggle('active');dropdownMenu.classList.toggle('active');});
+    document.addEventListener('click',function(e){
+      if(!hamburgerBtn.contains(e.target)&&!dropdownMenu.contains(e.target)){
+        hamburgerBtn.classList.remove('active');dropdownMenu.classList.remove('active');
+      }
+    });
+    dropdownMenu.querySelectorAll('.dropdown-item').forEach(item=>{
+      item.addEventListener('click',function(){hamburgerBtn.classList.remove('active');dropdownMenu.classList.remove('active');});
+    });
+  }
+
+  const T={
+    id:{home:'🏠 Beranda',edu:'🎓 Latar Belakang',exp:'💼 Perjalanan Saya',org:'🤝 Kontribusi'},
+    en:{home:'🏠 Home',edu:'🎓 Background',exp:'💼 My Journey',org:'🤝 Contributions'},
+    ja:{home:'🏠 ホーム',edu:'🎓 学歴・資格',exp:'💼 私の旅',org:'🤝 貢献活動'}
+  };
+  const NAV_MAP={home:'home',edu:'edu',exp:'exp',org:'org'};
+  function updateLang(lang){
+    const t=T[lang]; if(!t)return;
+    document.querySelectorAll('[data-nav]').forEach(el=>{
+      const k=el.getAttribute('data-nav');
+      if(t[k])el.textContent=t[k];
+    });
+  }
+  const langOpts=document.querySelectorAll('.lang-option');
+  langOpts.forEach(opt=>{
+    opt.addEventListener('click',function(){
+      const lang=this.getAttribute('data-lang');
+      localStorage.setItem('selectedLanguage',lang);
+      updateLang(lang); document.documentElement.lang=lang;
+      langOpts.forEach(o=>o.classList.remove('active')); this.classList.add('active');
+      const hb=document.getElementById('hamburgerBtn'), dm=document.getElementById('dropdownMenu');
+      if(hb)hb.classList.remove('active'); if(dm)dm.classList.remove('active');
+    });
+  });
+  const sl=localStorage.getItem('selectedLanguage')||'id';
+  const ao=document.querySelector(`.lang-option[data-lang="${sl}"]`);
+  if(ao)ao.classList.add('active');
+  updateLang(sl);
+
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',function(e){
+      const href=this.getAttribute('href'); if(href==='#')return;
+      e.preventDefault();
+      const t=document.querySelector(href); if(t)t.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  });
+});
+</script>
+
+</body>
+</html>

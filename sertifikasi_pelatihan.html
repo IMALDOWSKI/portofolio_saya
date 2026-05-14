@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sertifikasi & Pelatihan - Hikmal Abrar</title>
+<meta name="description" content="Sertifikasi dan pelatihan yang telah diikuti oleh Hikmal Abrar - Data Analyst">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📜</text></svg>">
+<link rel="stylesheet" href="style.css">
+<meta property="og:title" content="Sertifikasi & Pelatihan — Hikmal Abrar">
+<meta property="og:description" content="Portfolio Hikmal Abrar — Data Analyst yang mengubah data menjadi wawasan jelas dan dapat ditindaklanjuti.">
+<meta property="og:image" content="https://i.imgur.com/Rub0ZQ6.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+<div class="loading-screen" id="loadingScreen"><div class="loader"></div></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme" id="themeBtn">🌙</button>
+
+<!-- ===== HEADER NAVIGATION ===== -->
+<header class="header-nav">
+  <div class="container">
+    <nav class="nav-menu">
+      <div class="nav-brand">
+        <a href="index.html" class="brand-link">Hikmal Abrar</a>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-item-dropdown">
+          <a href="index.html" class="nav-item " data-nav="home">🏠 Beranda</a>
+          <div class="dropdown-submenu">
+            <a href="index.html#about" class="dropdown-item">👤 Tentang Saya</a>
+            <a href="index.html#skills" class="dropdown-item">⚡ Skills</a>
+            <a href="index.html#projects" class="dropdown-item">🗂️ Proyek</a>
+            <a href="index.html#contact" class="dropdown-item">📬 Kontak</a>
+          </div>
+        </li>
+        <li class="nav-item-dropdown">
+          <a href="#" class="nav-item active" data-nav="edu">🎓 Latar Belakang</a>
+          <div class="dropdown-submenu">
+            <a href="pendidikan.html" class="dropdown-item">🏫 Pendidikan Formal</a>
+            <a href="sertifikasi_pelatihan.html" class="dropdown-item">📜 Sertifikasi &amp; Pelatihan</a>
+          </div>
+        </li>
+        <li class="nav-item-dropdown">
+          <a href="#" class="nav-item " data-nav="exp">💼 Perjalanan Saya</a>
+          <div class="dropdown-submenu">
+            <a href="pengalaman_kerja.html" class="dropdown-item">🏢 Pengalaman Kerja</a>
+            <a href="volunteer.html" class="dropdown-item">❤️ Volunteer</a>
+          </div>
+        </li>
+        <li class="nav-item-dropdown">
+          <a href="#" class="nav-item " data-nav="org">🤝 Kontribusi</a>
+          <div class="dropdown-submenu">
+            <a href="organisasi.html" class="dropdown-item">🏛️ Organisasi</a>
+            <a href="organisasi.html#community" class="dropdown-item">🌱 Komunitas</a>
+          </div>
+        </li>
+      </ul>
+      <div class="nav-controls">
+        <a href="https://wa.me/6282179736557?text=Hi%20Hikmal,%20I%20would%20like%20to%20hire%20you%20for%20a%20project"
+           class="btn btn-hire" target="_blank" title="Hire Me via WhatsApp">
+          <span>💼</span> Hire Me
+        </a>
+        <div class="hamburger-menu">
+          <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          <div class="dropdown-menu" id="dropdownMenu">
+            <div class="dropdown-section">
+              <h4 class="dropdown-title">Bahasa / Language</h4>
+              <div class="lang-options">
+                <button class="lang-option" data-lang="id">🇮🇩 Indonesia</button>
+                <button class="lang-option" data-lang="en">🇬🇧 English</button>
+                <button class="lang-option" data-lang="ja">🇯🇵 日本語</button>
+              </div>
+            </div>
+            <div class="dropdown-section">
+              <h4 class="dropdown-title">Halaman</h4>
+              <a href="index.html" class="dropdown-item">🏠 Beranda</a>
+              <a href="pendidikan.html" class="dropdown-item">🎓 Pendidikan</a>
+              <a href="pengalaman_kerja.html" class="dropdown-item">💼 Pengalaman Kerja</a>
+              <a href="volunteer.html" class="dropdown-item">❤️ Volunteer</a>
+              <a href="organisasi.html" class="dropdown-item">🏛️ Organisasi</a>
+              <a href="sertifikasi_pelatihan.html" class="dropdown-item">📜 Sertifikasi</a>
+            </div>
+            <div class="dropdown-section">
+              <h4 class="dropdown-title">Aksi Cepat</h4>
+              <a href="https://drive.google.com/file/d/1S7kXNs9U4jVXm8Y3dfDk3zoFatZHrOvW/view?usp=sharing" class="dropdown-item" target="_blank">📄 Download CV</a>
+              <a href="index.html#contact" class="dropdown-item">💬 Hubungi Saya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content fade-in-up">
+      <div class="hero-text">
+        <h1>Sertifikasi & Pelatihan</h1>
+        <div class="role">Pengembangan Diri Berkelanjutan</div>
+        <div class="tagline">"Investasi dalam pengetahuan adalah investasi terbaik untuk masa depan"</div>
+      </div>
+      <div>
+        <div class="profile-card">
+          <div class="profile-avatar">📜</div>
+          <h3 style="color:var(--text)">Lifelong Learner</h3>
+          <p style="color:var(--text-sec);margin-top:8px">Selalu berusaha meningkatkan kemampuan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CERTIFICATION ===== -->
+<section class="section" id="certification">
+  <div class="container">
+    <h2 class="section-title">Sertifikasi & Pelatihan</h2>
+    <div class="cert-grid fade-in-up">
+
+      <div class="cert-card">
+        <div class="cert-header">
+          <div class="cert-icon-lg">🐍</div>
+          <div>
+            <div class="cert-title">Python Programming</div>
+            <div class="cert-provider">Laboratorium Komputer Indonesia</div>
+            <div class="cert-level">Tingkat Dasar</div>
+          </div>
+        </div>
+        <div class="cert-period">📅 2023</div>
+        <p class="cert-desc">Pelatihan pemrograman Python fundamental dengan fokus pada dasar-dasar data analysis.</p>
+        <a href="https://drive.google.com/file/d/1GCPyxTZcdrnFpBpzwL2ZwAvJ1cY3B-dK/view?usp=sharing" target="_blank" class="cert-link">📄 Lihat Sertifikat →</a>
+      </div>
+
+      <div class="cert-card placeholder">
+        <div class="cert-header">
+          <div class="cert-icon-lg">📊</div>
+          <div>
+            <div class="cert-title">Data Analysis</div>
+            <div class="cert-provider">In Progress</div>
+            <div class="cert-level">Intermediate</div>
+          </div>
+        </div>
+        <div class="cert-period">📅 2025 (Planned)</div>
+        <p class="cert-desc">Sedang mempersiapkan sertifikasi data analysis untuk meningkatkan kredibilitas profesional.</p>
+        <span class="status-badge">🚀 In Progress</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section" id="contact">
+  <div class="container">
+    <h2 class="section-title">Kontak</h2>
+    <div class="contact-content fade-in-up">
+      <p style="color:var(--text-sec);margin-bottom:28px">Mari terhubung dan diskusi tentang peluang kolaborasi atau pengembangan profesional.</p>
+      <div class="contact-links">
+        <a href="mailto:hikmal393@gmail.com" class="contact-link">
+          <div class="contact-icon">📧</div>
+          <div class="contact-label">Email</div>
+        </a>
+        <a href="https://linkedin.com/in/hikmal-abrar" class="contact-link">
+          <div class="contact-icon">💼</div>
+          <div class="contact-label">LinkedIn</div>
+        </a>
+        <a href="https://github.com/hikmalabrar" class="contact-link">
+          <div class="contact-icon">🐙</div>
+          <div class="contact-label">GitHub</div>
+        </a>
+        <a href="https://wa.me/6282179736557" class="contact-link">
+          <div class="contact-icon">📱</div>
+          <div class="contact-label">WhatsApp</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 Hikmal Abrar — Data Analyst Portfolio</p>
+  </div>
+</footer>
+
+<script>
+// ===== SHARED SCRIPT =====
+function toggleTheme(){
+  const html=document.documentElement, btn=document.getElementById('themeBtn');
+  if(html.getAttribute('data-theme')==='dark'){
+    html.removeAttribute('data-theme'); btn.textContent='🌙'; localStorage.setItem('theme','light');
+  } else {
+    html.setAttribute('data-theme','dark'); btn.textContent='☀️'; localStorage.setItem('theme','dark');
+  }
+}
+
+document.addEventListener('DOMContentLoaded',function(){
+  const saved=localStorage.getItem('theme'), btn=document.getElementById('themeBtn');
+  if(saved==='dark'){document.documentElement.setAttribute('data-theme','dark');btn.textContent='☀️';}
+  setTimeout(()=>document.getElementById('loadingScreen').classList.add('hidden'),600);
+
+  window.addEventListener('scroll',function(){
+    const t=window.pageYOffset, h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+    document.getElementById('scrollProgress').style.width=(t/h*100)+'%';
+  });
+
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});
+  },{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.fade-in-up').forEach(el=>obs.observe(el));
+
+  const pbObs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting)e.target.querySelectorAll('.progress-bar').forEach(bar=>{
+        setTimeout(()=>bar.querySelector('.progress-fill').style.width=bar.dataset.skill+'%',200);
+      });
+    });
+  },{threshold:.4});
+  const sg=document.querySelector('.skills-grid');
+  if(sg)pbObs.observe(sg);
+
+  const hamburgerBtn=document.getElementById('hamburgerBtn'), dropdownMenu=document.getElementById('dropdownMenu');
+  if(hamburgerBtn&&dropdownMenu){
+    hamburgerBtn.addEventListener('click',function(){this.classList.toggle('active');dropdownMenu.classList.toggle('active');});
+    document.addEventListener('click',function(e){
+      if(!hamburgerBtn.contains(e.target)&&!dropdownMenu.contains(e.target)){
+        hamburgerBtn.classList.remove('active');dropdownMenu.classList.remove('active');
+      }
+    });
+    dropdownMenu.querySelectorAll('.dropdown-item').forEach(item=>{
+      item.addEventListener('click',function(){hamburgerBtn.classList.remove('active');dropdownMenu.classList.remove('active');});
+    });
+  }
+
+  const T={
+    id:{home:'🏠 Beranda',edu:'🎓 Latar Belakang',exp:'💼 Perjalanan Saya',org:'🤝 Kontribusi'},
+    en:{home:'🏠 Home',edu:'🎓 Background',exp:'💼 My Journey',org:'🤝 Contributions'},
+    ja:{home:'🏠 ホーム',edu:'🎓 学歴・資格',exp:'💼 私の旅',org:'🤝 貢献活動'}
+  };
+  const NAV_MAP={home:'home',edu:'edu',exp:'exp',org:'org'};
+  function updateLang(lang){
+    const t=T[lang]; if(!t)return;
+    document.querySelectorAll('[data-nav]').forEach(el=>{
+      const k=el.getAttribute('data-nav');
+      if(t[k])el.textContent=t[k];
+    });
+  }
+  const langOpts=document.querySelectorAll('.lang-option');
+  langOpts.forEach(opt=>{
+    opt.addEventListener('click',function(){
+      const lang=this.getAttribute('data-lang');
+      localStorage.setItem('selectedLanguage',lang);
+      updateLang(lang); document.documentElement.lang=lang;
+      langOpts.forEach(o=>o.classList.remove('active')); this.classList.add('active');
+      const hb=document.getElementById('hamburgerBtn'), dm=document.getElementById('dropdownMenu');
+      if(hb)hb.classList.remove('active'); if(dm)dm.classList.remove('active');
+    });
+  });
+  const sl=localStorage.getItem('selectedLanguage')||'id';
+  const ao=document.querySelector(`.lang-option[data-lang="${sl}"]`);
+  if(ao)ao.classList.add('active');
+  updateLang(sl);
+
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',function(e){
+      const href=this.getAttribute('href'); if(href==='#')return;
+      e.preventDefault();
+      const t=document.querySelector(href); if(t)t.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  });
+});
+</script>
+</body>
+</html>
